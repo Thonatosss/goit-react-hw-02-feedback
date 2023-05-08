@@ -5,7 +5,7 @@ const FeedbackOptions = ({ onHandleFeedback, options }) => (
     <ButtonWrapper className="Feedback">
         {options.map(opName => (
             <div className="FeedbackControls" key={opName}>
-                <Button type="button" onClick={() => onHandleFeedback(opName)}>{opName}</Button>
+                <Button color={opName} type="button" onClick={() => onHandleFeedback(opName)}>{opName}</Button>
             </div>
         ))}
     </ButtonWrapper>

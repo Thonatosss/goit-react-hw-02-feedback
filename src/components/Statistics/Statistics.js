@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import { Stats } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, percentage }) => (
     <div className="Stats">
-        <span>Good: {good} </span>
-        <span>Neutral: {neutral} </span>
-        <span>Bad: {bad}</span>
-        <span>Total: {total()}</span>
-        <span>Percentage: {percentage()}</span>
+        <Stats>Good: {good} </Stats>
+        <Stats>Neutral: {neutral} </Stats>
+        <Stats>Bad: {bad}</Stats>
+        <Stats>Total: {total()}</Stats>
+        <Stats>Percentage: {percentage()}</Stats>
     </div>
 );
 
